@@ -1,16 +1,8 @@
-import localFont from "next/font/local";
-import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import Head from "next/head";
+import "./globals.css";
+import Link from "next/link";
+
 
 export const metadata = {
   title: "Create Next App",
@@ -20,10 +12,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+          <link 
+            href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" 
+            rel="stylesheet" 
+          />
+      <body className="font-anton antialiased scrollbar-hide">
+        <div className="container mx-auto scrollbar-hide">
+          <div className="leading-relaxed text-slate-200 antialiased selection:bg-teal-300 selection:text-teal-900 scrollbar-hide">
+            <div className="z-[-10] bg-slate-950 fixed inset-0 bg-[radial-gradient(circle_at_center_200px,_#B8860B25_5%,_transparent)] scrollbar-hide "></div>
+            {children}
+          </div>
+        </div>
       </body>
     </html>
   );
