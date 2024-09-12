@@ -3,8 +3,8 @@ import tumb from "../../public/tumb.jpg";
 
 export const PROFILE = {
   name: "VENUS OF 12 PM",
-  city: "Detroit, Michigan",
-  greet: "Check out my work and let me know if you want any of these!🛸",
+  city: "Welcome!",
+  greet: "⭐High Quality Hand Drawn Art Prints & Canvases⭐",
 };
 
 export const PROJECTS = [

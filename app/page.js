@@ -8,6 +8,8 @@ export default function Home() {
     <div className="scrollbar-hide">
       <ProfileOverview />
       <TopScreenGalery />
+      <ProfileOverview />
+      <ProfileOverview />
 
     </div>
   );
