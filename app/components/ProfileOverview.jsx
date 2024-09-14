@@ -8,17 +8,12 @@ import { PROFILE } from "../constants"
 
 const ProfileOverview = () => {
   return (
-    <div className="my-10 select-none scrollbar-hide">
-      <div className="flex flex-col items-center justify-center gap-1 select-none">
-        <Image src={Profilepic}
-        width={100}
-        height={100}
-        alt='profilepic'
-        className="rounded-full border-1 border-slate-400" />
-        <h1 className=" text-3xl text-orange-300 tracking-wider">{PROFILE.name}</h1>
-        <p className="tracking-widest text-xl">{PROFILE.city}</p>
-        <p className="tracking-widest text-sm xs:text-10px font-sans uppercase">{PROFILE.greet}</p>
-        
+    <div className=" w-full select-none scrollbar-hide z-80 xxs:py-1 fixed">
+      <div className="flex flex-col items-center mt-5 justify-center gap-1 select-none">
+        <h1 className=" lg:text-3xl xxs:text-xl text-orange-300 tracking-wider">{PROFILE.name}</h1>
+        <p className="tracking-widest lg:text-xl text-white xxs:text-md">{PROFILE.city}</p>
+        <p className="tracking-widest md:text-[15px] xs:text-[10px] xxs:text-[8px] xs:ml-1 xxs:ml-2 font-sans text-white uppercase">{PROFILE.greet}</p>
+
       </div>
     </div>
   )

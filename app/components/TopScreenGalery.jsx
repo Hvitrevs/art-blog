@@ -13,11 +13,14 @@ const TopScreenGallery = () => {
   };
 
   return (
-    <div className="relative ">
+    <div className="relative  md:mt-[350px] xxs:mt-[250px] ">
+      <h1 className='text-[#ffbc65] px-2  lg:text-[15px] md:text-[14px] xs:text-[10px] xxs:text-[9px] tracking-widest font-sans uppercase '>
+        Last month best seller:
+      </h1>
       <div 
         id="image-track" 
         ref={scrollContainerRef}
-        className="flex overflow-x-auto space-x-4 p-4 scrollbar-hide"
+        className="flex overflow-x-auto space-x-4 p-4 scrollbar-hide  xs:mx-9 xxs:mx-4"
       >
         <img 
           className="w-40 h-50 object-cover" 
@@ -63,13 +66,13 @@ const TopScreenGallery = () => {
 
       {/* Scroll Arrows */}
       <button
-        className="absolute top-1/2 left-0 transform -translate-y-1/2 border-2 border-orange-300 text-orange-300  p-1 rounded-r cursor-pointer"
+        className="absolute top-1/2 left-0 transform -translate-y-1/2 border-2 border-[#694e2b] text-orange-300 bg-[#03001417] backdrop-blur-md  p-1 rounded-l cursor-pointer"
         onClick={() => scroll('left')}
       >
         &lt;
       </button>
       <button
-        className="absolute top-1/2 right-0 transform -translate-y-1/2 border-2 border-orange-300 text-orange-300  p-1 rounded-l cursor-pointer"
+        className="absolute top-1/2 right-0 transform -translate-y-1/2 border-2 border-[#694e2b] text-orange-300 bg-[#03001417] backdrop-blur-md  p-1 rounded-r cursor-pointer"
         onClick={() => scroll('right')}
       >
         &gt;
